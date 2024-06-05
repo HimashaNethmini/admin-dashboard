@@ -1,4 +1,3 @@
-# Quizz Webapp
+# Next-Ecommerce
 
-Use springboot to develop the quizz app
-MVC architecture
+
