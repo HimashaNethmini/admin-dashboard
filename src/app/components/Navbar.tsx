@@ -8,7 +8,9 @@ const Navbar = () => {
         <div className="h-full flex items-center justify-between">  {/*gap between menu icon and header name */}
         
           {/* Mobile - menu bar for only mobile users*/}
-          <Link href="/">LAMA</Link>
+          <Link href="/">
+            <div className="text-2xl tracking-wide">LAMA</div> {/*add letter spacing */}
+          </Link>
           <Menu/>
 
         </div>
