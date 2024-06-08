@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="hidden md:flex items-center justify-between gap-8 h-full">
         {/* left */}
         <div className="w-1/3">
-          <Link href="/">
+          <Link href="/" className="flex items-center gap-8"> {/*gap between cart n name */}
             <Image src="/logo.png" alt="" width={24} height={24} />
             <div className="text-2xl tracking-wide"> LAMA </div>
           </Link>
