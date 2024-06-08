@@ -1,7 +1,6 @@
 "use client"; //have to make this a client component to make user interaction
 
 import { useState } from "react";
-import HomePage from "../components/Homepage";
 import Link from "next/link";
 import Image from "next/image";
 // import "../../../public/menu.png";
