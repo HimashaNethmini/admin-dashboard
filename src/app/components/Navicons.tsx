@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import CartModal from "./CartModal";
 
 const Navicons = () => {
 
@@ -24,7 +25,6 @@ const Navicons = () => {
     }
     setIsProfileOpen ((prev) => !prev);
     };
-  
 
   return (
     // right side of the homepage
@@ -44,7 +44,7 @@ const Navicons = () => {
         </div>
       )}
 
-
+    {/* notiifcation */}
       <Image
         src="/notification.png"
         alt=""
@@ -52,13 +52,19 @@ const Navicons = () => {
         height={22}
         className="cursor-pointer"
       />
+
+    {/*cart handling */}
       <Image
         src="/cart.png"
         alt=""
         width={22}
         height={22}
         className="cursor-pointer"
+        onClick={() => setIsCartOpen((prev) => !prev)}
       />
+      {isCartOpen && 
+        <CartModal/> 
+      }
     </div>
   );
 };
