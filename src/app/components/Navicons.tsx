@@ -63,7 +63,7 @@ const Navicons = () => {
         className="cursor-pointer"
         onClick={() => setIsCartOpen((prev) => !prev)}
       />
-      <div className="absolute -top-4 -right-3 w-5 h-6 m-1  bg-cart text-xs rounded-full flex items-center justify-center">2</div>
+      <div className="absolute -top-4 -right-3 w-5 h-6 m-1  bg-cart text-xs text-white rounded-full flex items-center justify-center">2</div>
       </div>
       {isCartOpen && <CartModal/>}
     </div>
