@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-// import "../../../public/menu.png";
 
 const Menu = () => {
   //use state to open the menu bar in mobile view
