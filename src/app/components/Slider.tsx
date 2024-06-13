@@ -31,7 +31,7 @@ const slides = [
 ];
 
 const Slider = () => {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(0); //at the beginning index slider is 0
 
   return (
     <div className="h-[calc(100vh-80px)] overflow-hidden">
