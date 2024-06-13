@@ -8,6 +8,7 @@ const CartModal = () => {
       {!cartItems ? (
         <div className="">Cart is Empty </div>
       ) : (
+        <>
         <div className="flex flex-col gap-8">
 
           {/* first shopping item */}
@@ -76,6 +77,22 @@ const CartModal = () => {
           </div>
         </div>
         </div>
+
+        {/* / button */}
+        <div className="">
+          <div className="flex items-center justify-between font-semibold">
+            <span className="">Subtotal</span>
+            <span className="">$138</span>
+          </div>
+          <p className="text-gray-500 text-sm mt-2 mb-4">
+            Shipping and taxes calculated at checkout.
+          </p>
+          <div className="flex justify-between text-sm">
+            <button className="bg-black text-white rounded-md py-3 px-4 ring-1 ring-gray-300"> Buy Now</button>
+            <button className="rounded-md py-3 px-4 ring-1 ring-gray-300 "> View Cart</button>
+          </div>
+        </div>
+        </>
       )}
     </div>
   );
