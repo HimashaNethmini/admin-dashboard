@@ -9,6 +9,7 @@ const CartModal = () => {
         <div className="">Cart is Empty </div>
       ) : (
         <>
+        <h2 className="flex items-center justify-center font-medium text-xl">Shopping Cart</h2>
         <div className="flex flex-col gap-8">
 
           {/* first shopping item */}
