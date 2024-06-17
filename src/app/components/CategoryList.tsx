@@ -96,7 +96,6 @@ const CategoryList = () => {
         </Link>
         
       </div>
-      Categories
     </div>
   );
 };
