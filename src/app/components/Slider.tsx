@@ -31,7 +31,7 @@ const slides = [
   },
   {
     id:4,
-    title: "Here Comes Summer Collection",
+    title: "Summer Sale Collections",
     description: "Sale! Up to 50% off!",
     img: "https://images.pexels.com/photos/3007759/pexels-photo-3007759.jpeg?auto=compress&cs=tinysrgb&w=800",
     url: "/",
