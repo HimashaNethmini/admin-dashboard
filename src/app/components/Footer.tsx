@@ -65,13 +65,13 @@ const Footer = () => {
             Be the first to get the latest news about trends, promotions, and
             much more!
           </p>
-          <div className="flex">
+          <div className="flex gap-4">
             <input
               type="text"
               placeholder="Email address"
-              className="p-4 w-3/4"
+              className="p-4 rounded-md"
             />
-            <button className="w-1/4 bg-lama text-white">JOIN</button>
+            <button className="w-1/4 bg-lama text-gray-800 text-xl font-bold">JOIN</button>
           </div>
           <span className="font-semibold">Secure Payments</span>
           <div className="flex justify-between">
