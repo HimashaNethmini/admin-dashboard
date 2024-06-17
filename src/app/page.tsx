@@ -8,13 +8,13 @@ const HomePage = () => {
     <div className=''>
       <Slider/>
     <div className="mt-24 px-4 md:px-8 lg:px-16 xl:32 2xl:px-64">
-      <h1 className="text-2xl">Featured Products</h1>
+      <h1 className="text-2xl mb-3">Featured Products</h1>
       <ProductList />
     </div>
 
     {/* categories */}
     <div className="mt-24">
-      <h1 className="text-2xl">Categories</h1>
+      <h1 className="text-2xl px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 mb-4">Categories</h1>
       <CategoryList/>
     </div>
 
