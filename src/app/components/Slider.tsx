@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 //adding the needed slider data as an array
 const slides = [
@@ -29,10 +29,29 @@ const slides = [
     url: "/",
     bg: "bg-gradient-to-r from-blue-50 to-yellow-50",
   },
+  {
+    id:4,
+    title: "Here Comes Summer Collection",
+    description: "Sale! Up to 50% off!",
+    img: "https://images.pexels.com/photos/3007759/pexels-photo-3007759.jpeg?auto=compress&cs=tinysrgb&w=800",
+    url: "/",
+    bg:"bg-gradient-to-r from-pink-50 to-yellow-50",
+  }
+
 ];
 
 const Slider = () => {
   const [current, setCurrent] = useState(0); //at the beginning index slider is 0
+
+  //for auto change of slider
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  //   }, 4000);
+
+  //   //clean up 
+  //   return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="h-[calc(100vh-80px)] overflow-hidden">
