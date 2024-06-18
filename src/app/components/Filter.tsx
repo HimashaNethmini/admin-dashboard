@@ -1,5 +1,19 @@
+import { REPLServer } from "repl";
+
 const Filter = () => {
-  return (
+  
+  
+  //handleFilterChange}
+  const handleFilterChange = (
+    e:React.ChangeEvent<HTMLSelectElement | HTMLInputElement>
+  ) => {
+    const { name, value} = e.target;
+    const params = new URLSearchParams(searchParams);
+    params.set(name, value);
+    replace(`${pathname}?${params.toString()}`);
+  };
+
+    return (
     <div className="mt-12 flex justify-between">
       <div className="flex gap-6 flex-wrap">
         <select
