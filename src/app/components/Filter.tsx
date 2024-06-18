@@ -1,7 +1,11 @@
-import { REPLServer } from "repl";
+"use client";
+
+import { usePathname, useSearchParams, useRouter } from "next/navigation";
 
 const Filter = () => {
-  
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const { replace } = useRouter();
   
   //handleFilterChange}
   const handleFilterChange = (
