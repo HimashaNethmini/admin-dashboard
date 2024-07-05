@@ -8,7 +8,7 @@ const Add = () => {
   
   //increment function
   const incrementQuantity = () => {
-    
+    setQuantity(prev => prev + 1);
   }
 
   return (
@@ -19,7 +19,7 @@ const Add = () => {
           <div className="bg-gray-100 py-2 px-4 rounded-3xl flex items-center justify-between w-32">
             <button
               className="cursor-pointer text-xl disabled:cursor-not-allowed disabled:opacity-20"
-              // onClick={() => handleQuantity("d")}
+              onClick = { }
               // disabled={quantity===1}
             >
               -
@@ -27,7 +27,7 @@ const Add = () => {
             {Quantity}
             <button
               className="cursor-pointer text-xl disabled:cursor-not-allowed disabled:opacity-20"
-              // onClick={() => handleQuantity("i")}
+              onClick={incrementQuantity}
               // disabled={quantity===stockNumber}
             >
               +
