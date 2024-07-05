@@ -15,6 +15,8 @@ const config: Config = {
       },
       colors:{
         cart:"#F35C7A",
+        blu:"#0E2268",
+        gren:"#13490E",
       }
     },
   },
